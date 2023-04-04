@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/weatherapiproject/static/css/main.61468577.css",
+    "main.js": "/weatherapiproject/static/js/main.866fddbb.js",
+    "index.html": "/weatherapiproject/index.html",
+    "main.61468577.css.map": "/weatherapiproject/static/css/main.61468577.css.map",
+    "main.866fddbb.js.map": "/weatherapiproject/static/js/main.866fddbb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61468577.css",
+    "static/js/main.866fddbb.js"
+  ]
+}
