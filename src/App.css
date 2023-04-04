@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+:root {
+    --dark: #1e1e1e;
+    --gardient: linear-gradient(#2E335A, #1C1B33);
+    --pure: #ffffff;
+    --primary: #0f1644;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: var(--gardient) no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather {
+    padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search_wrapper input {
+    color: var(--pure);
+    background: transparent;
+    border: none;
+    border: 2px solid #2E335A;
+    width: 25rem;
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: 2rem 0 0 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.search_wrapper input::placeholder {
+    color: var(--pure);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search_wrapper input:focus {
+    outline: none;
+}
+
+button {
+    color: var(--pure);
+    background: var(--primary);
+    height: 3rem;
+    width: 7rem;
+    border: none;
+    border-radius: 0 2em 2rem 0 !important;
+}
+
+.weather_icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    color: var(--pure);
+}
+
+@media only screen and (max-width: 568px) {
+    .search_wrapper input {
+        width: 10rem;
+    }
 }
